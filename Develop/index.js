@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+// Grabs external packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
-
+//Grabs GenerateMarkdown Function
 const genMarkdown = require('./utils/generateMarkdown')
 
-// TODO: Create an array of questions for user input
+//List of questions for user for README
 const questions = [
     {
         type: 'input',
@@ -39,13 +39,13 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+//Creates function for README to generate with the template
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, genMarkdown.generateMarkdown(data), err => {
         err ? console.log(err) : console.log("Success!");
     });
 }
-
+// Allows README to be presented
 util.promisify(writeToFile);
 
 
