@@ -12,5 +12,5 @@ Overall, this project was somewhat difficult, as I had to learn how to use NPM's
 
 **Links**
 
-YouTube Demonstration: https://www.youtube.com/watch?v=9PNwAUc5FCM
+YouTube Demonstration: https://youtu.be/OGwGBelzz1U
 GitHub Repository: https://github.com/johnclimie/READMEGenerator 

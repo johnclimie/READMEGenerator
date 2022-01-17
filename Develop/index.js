@@ -28,6 +28,12 @@ const questions = [
         name: 'usage',
     },
     {
+        type: 'list',
+        message: 'Pick a license',
+        name: 'license',
+        choices: ['Apache License 2.0', 'GNU', 'MIT', 'Mozilla Public License 2.0', 'The Unlicense', 'None']
+    },
+    {
         type: 'input',
         message: 'Who all contributed to your project?',
         name: 'contributing',
@@ -37,6 +43,16 @@ const questions = [
         message: 'How was project tested?',
         name: 'tests'
     },
+    {
+        type: 'input',
+        message: 'What is your Github username?',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'mail'
+    }
 ];
 
 //Creates function for README to generate with the template
